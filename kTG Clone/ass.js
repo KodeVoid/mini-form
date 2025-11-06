@@ -4,21 +4,19 @@ function showMessage() {
     const age = document.getElementById("age").value;
     const gender = document.getElementById("gender").value;    
 
+    const message = `Hi, ${firstName} ${surName}, ${age} years old, ${gender}, welcome to our site!`;
 
-const Message = 'HI, ${firstName} ${surName}, ${age} years old, ${gender}, welcome to our site!';
+    document.getElementById("message").innerText = 
+        message + "\nIf you want to continue click YES, if not click NO.";
 
-document.getElementById("message").innerText = Message + "\nIf you want to continue click YES, if not click NO.";
-
-document.getElementById("yes").style.display = "inline-block";
-document.getElementById("no").style.display = "inline-block";}
+    document.getElementById("yes").style.display = "inline-block";
+    document.getElementById("no").style.display = "inline-block";
+}
 
 function continueSite() {
-    alert("Great! Enjoy your stay.");}
+    alert("Great! Enjoy your stay.");
+}
 
-function exitSite(){
-    alert("Goodbye! Enjoy Have a nice day.");}
-
-
-
-
-
+function exitSite() {
+    alert("Goodbye! Have a nice day.");
+}
